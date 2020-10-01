@@ -1,0 +1,112 @@
+*{
+    scroll-behavior: smooth;
+}
+
+#head nav{
+    position: fixed;
+    z-index: 2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: rgb(3, 3, 119);
+    width: 100%;
+}
+
+
+#head .logo a{
+    color: rgb(248, 243, 228);
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 0.1rem;
+}
+
+#head .nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+    list-style: none;
+}
+
+#head .nav-links a{
+    text-transform: uppercase;
+    color: rgb(248, 243, 228);
+    letter-spacing: 0.1rem;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+#head .nav-links a:hover{
+    color: rgb(248, 245, 48);
+}
+
+#head .menu{
+    display: none;
+}
+
+#head .menu div{ 
+    background-color:  rgb(248, 243, 228);
+    width: 20px;
+    height: 2px;
+    margin: 4px;
+    transition: all 0.5s ease;
+}
+
+@media screen and (max-width: 1024px){
+
+    #home .home{
+        padding: 5rem;
+    }
+
+    #head .nav-links{
+        display: flex;
+        justify-content: space-around;
+        width: 50%;
+        list-style: none;
+    }
+
+    #head .nav-links a{
+        padding-left: 20px;
+    }
+}
+
+@media screen and (max-width: 658px){
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .nav-links{
+        z-index: 2;
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        width: 50%;
+        top: 8vh;
+        background-color: rgb(3, 3, 119);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+
+    #head .menu{
+        cursor: pointer;
+        display: block;
+    }
+}
+
+.nav-active{
+    transform: translateX(0%);
+}
+
+.toggle .line1{
+    transform: rotate(45deg) translateX(3.5px) translateY(3px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(-45deg) translateX(5.5px) translateY(-5.3px);
+}

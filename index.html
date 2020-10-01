@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./navbar.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <section id="head">
+            <nav class="nav-bar">
+                <div class="logo">
+                    <h3><a href="#home">Portfolio</a></h3>
+                </div>
+                <ul class="nav-links">
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+                <div class="menu">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+            </nav>
+    </section>
+    
+     <!-- Home section start -->
+    <section id="home">
+        <div class="home container">
+            <div>
+                <h1>Hello,</h1>
+                <h1>My Name is</h1>
+                <h1> <span>Mateusz</span></h1>
+                <a href="#about" type="button" class="journey">Start Journey</a>
+            </div>
+        </div>
+    </section>
+     <!-- Home section end -->
+
+    <!-- About section start -->
+    <section id="about">
+        <div class="about container">
+            <div class="about-top">
+                <div class="about-title">
+                    <h1>About</h1>
+                </div>
+                <div class="about-description">
+                    <p>Welcome in my portfolio. My name is Mateusz and I'm backend devleoper that is looking for a junior Job. I programing in Java language. Beside programing I learning two forgein languages and I really like skiing.</p>      
+                </div>
+            </div>
+            <div class="about-languages">
+                <div class="about-english">
+                    <h2 onmouseover = "reavelFunction('english')" onmouseout="hideFunction('english')">English</h2>
+                    <a id="english" style="display: none">Hello, my name is Mateusz and currently i'm learning to C1 level</a>
+                </div>
+                <div class="about-chinese">
+                    <h2 onmousemove = "reavelFunction('chinese')" onmouseout="hideFunction('chinese')">Chinese</h2>
+                    <a id="chinese" style="display: none">你好，我叫马泰，我学习汉语。</a>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!-- About section end -->
+
+
+     <!-- Projects section start -->
+    <section id="projects">
+        <div class="projects container">
+            <div class="projects-top">
+                <div class="projects-title">
+                    <h1>Projects</h1>
+                </div>
+                <div class="project-description">
+                    <p>My main projects are listed below. Click on it to go to the repository on Github. In the repository, is deep in description about specific project. Also you can see my other repositoris that I didn't mantion here</p>
+                </div>
+            </div>
+            <div class="projects-bottom">
+                <div class="project-item" onclick="navigateTo('https://github.com/MatthewKsc/task-manager-api')">
+                    <div class="icon"><img src="./img/java.png"></div>
+                    <h2>Task-Manager</h2>
+                    <p>Application was written mainly in Java. Also I used Spring include Spring Security, Spring Data Jpa etc. In project I included JWT and Hibernate as database. At the frontend I used Angular</p>
+                </div>
+                <div class="project-item" onclick="navigateTo('https://github.com/MatthewKsc/project-poster-api')">
+                    <div class="icon"><img src="./img/java.png"></div>
+                    <h2>Project-Poster</h2>
+                    <p>This is my actual developing project in Java. I already used ther Spring include Spring Data JPA, Web core. As database I'm using SQL Server. Frontend will be written in future (JavaScript or Angular).</p>
+                </div>
+                <div class="project-item" onclick="navigateTo('https://github.com/MatthewKsc/carCatalog')">
+                    <div class="icon"><img src="./img/java.png"></div>
+                    <h2>Car-Catalog</h2>
+                    <p>This is simple project based on microservices architecture written in Java. In this project I used Spring Cloud, WebFlux and Eureka from Netflix.</p>
+                </div>
+                <div class="project-item" onclick="navigateTo('https://github.com/MatthewKsc/phone-shop')">
+                    <div class="icon"><img src="./img/java.png"></div>
+                    <h2>Phone-Shop</h2>
+                    <p>This is simple project that was written in Java. Main idea behind this project was to show basic usage of MongoDB with Spring and Java.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Projects section end -->
+
+    <!-- Contact section start -->
+    <section id="contact">
+        <div class="contact container">
+            <div class="contact-form">
+                <dvi class="contact-title">
+                    <h1>Contact</h1>
+                </dvi>
+                <div class="contact-item">
+                    <label for="company">Company</label>
+                    <input type="text" id="company" placeholder="Company name....">
+                </div>
+                <div class="contact-item">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="yourEmail@site.com">
+                </div>
+                <div class="contact-item">
+                    <label for="message">Text</label>
+                    <textarea type="text" id="message" placeholder="Write Message"></textarea>
+                </div>
+                <div class="btn">
+                    <a class="btn">Send</a>
+                </div>
+            </div>
+            <div class="contact-box">
+                <div class="box-item">
+                    <div><img src="./img/phone.png"></div>
+                    <div class="information">
+                        <h1>Phone</h2>
+                        <p>+48 696 230 174</p>
+                    </div>
+                </div>
+                <div class="box-item">
+                    <div><img src="./img/location.png"></div>
+                    <div class="information">
+                        <h1>Location</h1>
+                        <p>Poland, Ruda Slaska</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact section end -->
+
+    <!-- Footer section start -->
+    <section id="footer">
+        <div class="footer container">
+            <div class="footer-top">
+                <h1>Mateusz Kściuk</h1>
+            </div>
+            <div class="footer-bottom">
+                <div class="footer-item">
+                    <a onclick="navigateTo('https://www.linkedin.com/in/mateusz-ksciuk-7a0b69197/')"> <img src="./img/github(1).png"></a>
+                </div>
+                <div class="footer-item">
+                    <a onclick="navigateTo('https://github.com/MatthewKsc')"> <img src="./img/linkedin(1).png"></a>
+                </div>
+            </div>
+            <div class="footer-rights">
+                <p>Copyright © 2020 Mateusz. All rights reserved </p>
+                <p>Icons made by <a href="https://www.flaticon.com/authors/freepik">Freepik</a> from <a href="https://www.flaticon.com/"> www.flaticon.com</a></p>
+            </div>
+        </div>
+    </section>
+    <!-- Footer section end -->
+    <script type="text/javascript" src="./app.js"></script>
+</body>
+</html>
