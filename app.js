@@ -5,6 +5,7 @@ const reavelLanguage = () =>{
     const chiDesc = document.querySelector(".chiDesc");
 
     engBtn.addEventListener("click", ()=>{
+        console.log('active')
         engDesc.classList.toggle('fadeIn');
     });
 
