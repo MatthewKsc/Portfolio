@@ -85,6 +85,9 @@ a{
     flex-direction: column;
     text-align: center;
     margin: 0 auto;
+    font-size: 1.25rem;
+    letter-spacing: 0.1rem;
+    color: rgb(3, 3, 119);
 }
 
 #about .about-title{
@@ -99,29 +102,42 @@ a{
 }
 
 #about .about-description{
+    margin-top: 20px;
     font-weight: 300;
-    transform: translateY(20%);
-    font-size: 1.25rem;
     margin: 0 200px;
-    letter-spacing: 0.1rem;
-    color: navy;
 }
 
-#about .about-languages{
-    margin: 20px;
+#about .about-tech, .about-tools{
+    margin-top: 20px;
+}
+
+#about .about-chinese, .about-english{
+    margin-top: 20px;
     display: flex;
     justify-content: center;
-    font-size: 1.25rem;
-    color: rgb(3, 3, 119);
-    padding-bottom: 1.5rem;
-    letter-spacing: 0.1rem;
+    align-items: center;
+    flex-direction: column;
 }
 
-#about .about-english{
-    margin: 20px;
+#about .engDesc, .chiDesc{
+    width: 80%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
 }
-#about .about-chinese{
-    margin: 20px;
+
+#about .about-english button, .about-chinese button{
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    border: none;
+    background-color:  rgb(3, 3, 119);
+    color: white;
+    cursor: pointer;
+}
+
+.fadeIn {
+    opacity: 1;
 }
 /* About end */
 
@@ -216,7 +232,6 @@ a{
 }
 
 #projects .project-item:hover{
-    background-image: url(./img/backgroundToItem.jpg);
     transform: scale(1.1);
 }
 /* Project end */

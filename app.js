@@ -1,14 +1,18 @@
-function reavelFunction(ele){
-    const reavel = document.getElementById(ele);
-    if(reavel.style.display === 'none'){
-        reavel.style.display = 'block';
-    }
+const reavelLanguage = () =>{
+    const engBtn = document.querySelector(".engBtn");
+    const chiBtn = document.querySelector(".chiBtn");
+    const engDesc = document.querySelector(".engDesc");
+    const chiDesc = document.querySelector(".chiDesc");
+
+    engBtn.addEventListener("click", ()=>{
+        engDesc.classList.toggle('fadeIn');
+    });
+
+    chiBtn.addEventListener("click", ()=>{
+        chiDesc.classList.toggle('fadeIn');
+    });
 }
 
-function hideFunction(ele){
-    const hide = document.getElementById(ele)
-    hide.style.display = "none";
-}
 
 function navigateTo(element){
     window.open(element);
@@ -70,3 +74,4 @@ function emailCheck(emailToCheck){
 
 navSlide();
 sendEmail();
+reavelLanguage();
